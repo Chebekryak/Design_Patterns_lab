@@ -242,15 +242,15 @@ int main() {
     teachers.push_back(&teacher3);
 
     vector<string> groups;
-    groups.push_back("ПИ-101");
-    groups.push_back("ПИ-102");
+    groups.push_back("ПИН-11");
+    groups.push_back("ПИН-12");
 
     string discipline = "Объектно-ориентированное программирование";
 
     cout << "----- Преподаватели создают текущую успеваемость -----" << endl;
-    teacher1.createProgress(database, "ПИ-101", discipline);
-    teacher2.createProgress(database, "ПИ-101", discipline);
-    teacher3.createProgress(database, "ПИ-102", discipline);
+    teacher1.createProgress(database, "ПИН-11", discipline);
+    teacher2.createProgress(database, "ПИН-11", discipline);
+    teacher3.createProgress(database, "ПИН-12", discipline);
 
     database.printReports();
 
